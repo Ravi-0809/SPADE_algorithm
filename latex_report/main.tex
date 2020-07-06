@@ -1,0 +1,61 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tabularx, booktabs}
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% --------- Title ----------- 
+\title{Mining Sequential Patterns using SPADE}
+
+% --------- Authors section -----------
+\author{\IEEEauthorblockN{Ravi Bharadwaj C}
+    \IEEEauthorblockA{\textit{CS-IS department} \\
+        \textit{BITS Pilani, Hyderabad campus}\\
+        Hyderabad, India \\
+        f20160244@hyderabad.bits-pilani.ac.in}
+}
+
+\maketitle
+
+% --------- Abstract -----------
+\begin{abstract}
+    The aim of this paper is to showcase the implementation of the SPADE(Sequential Pattern Discovery using Equivalence classes) algorithm on MSNBC's anonymous web dataset. The algorithm is implemented in python. Lastly, the results of this algorithm are presented along with in-depth discussions on the positives and negatives of the code implementation.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Data mining, sequential pattern mining, SPADE, sequential data
+\end{IEEEkeywords}
+
+% --------- 1. Introduction -----------
+\input{sections/introduction.tex}
+
+% --------- 3. Data description -----------
+\input{sections/data_desc.tex}
+
+% --------- 4. Preprocessing -----------
+\input{sections/preproc.tex}
+
+% --------- 5. Data visualization -----------
+\input{sections/visualization.tex}
+
+% --------- 6. Mining tasks -----------
+\input{sections/spade.tex}
+
+% --------- 7. Conclusion -----------
+\input{sections/conclusion.tex}
+
+% --------- References -------s
+\input{sections/references.tex}
+
+\end{document}
