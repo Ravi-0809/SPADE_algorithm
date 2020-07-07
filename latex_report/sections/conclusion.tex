@@ -8,13 +8,15 @@ Even though the SPADE algorithm was run only a 20\% sample of the data. The resu
     \begin{center}
         \begin{tabular}{|c|L|}
             \hline
-            \textbf{Frequent patterns} & 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13 ,14, (1,1), (1,2), (2,2), (7,7), (6,6), (4,4), (8,8), (14,14), (1,1,2), (1,2,1) \\
+            \textbf{Frequent patterns} & \{1\}, \{2\}, \{3\}, \{4\}, \{6\}, \{7\}, \{8\}, \{9\}, \{10\}, \{11\}, \{12\}, \{13\} ,\{14\}, \{1$\,\to\,$1\}, \{1$\,\to\,$2\}, \{2$\,\to\,$2\}, \{7$\,\to\,$7\}, \{6$\,\to\,$6\}, \{4$\,\to\,$4\}, \{8$\,\to\,$8\}, \{14$\,\to\,$14\}, \{1$\,\to\,$1$\,\to\,$2\}, \{1$\,\to\,$2$\,\to\,$1\} \\
             \hline
         \end{tabular}
     \end{center}
 \end{table}
 
 Different combinations of min\_sup and sampling percentage were tried out on the dataset. The results in Table \ref{results} shows the generated frequent sequences for a min\_sup of 0.05 on a 20\% sample of the dataset.
+
+As observed from the results, the ``frontpage'' (represented by 1) and ``news'' (represented by 2) are the most frequently appearing webpages in the sequences. This is also observed in the plot in Fig. \ref{website_histogram} in which the ``frontpage'' has significantly higher number of visits compared to other webpages. Further, only webpages represented by 5, 15, 16, 17 are infrequent frequent 1-sequences. These numbers represent ``opinion'', ``travel'', ``msn-news'' and ``msn-sports'' respectively. Moreover, It is also observed that websites 1, 2, 4, 6, 7, and 8 also form frequent 2-sequences with themselves. This means that users probably refreshed those pages often and could be that they stayed on those pages for longer durations.
 
 \section{Conclusion}
 

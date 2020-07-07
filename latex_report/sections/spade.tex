@@ -14,7 +14,8 @@ The implementation of these three steps are discussed in detail in the next sect
 
 \subsection{Implementation}
 
-Due to the large dataset size and also the large sequence lengths, the algorithm could not be implemented on the complete dataset. Instead, the algorithm is implemented on a subset of the data using random sampling which will approximately give the same results.
+Due to the large dataset size and also the large sequence lengths, the algorithm takes too long to run on the complete dataset (more than 5 hours). Instead, the algorithm is implemented on a 20\% subset of the data generated using random sampling which will approximately give the same results.
+The implemented algorithm has been uploaded to github \cite{b3} and was tested on the google colab platform.
 
 \subsubsection{Computing frequent 1-sequences}
 
